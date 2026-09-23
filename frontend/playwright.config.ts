@@ -1,0 +1,2 @@
+import { defineConfig, devices } from '@playwright/test';
+export default defineConfig({ testDir:'./e2e', timeout:30000, retries:0, use:{baseURL:'http://localhost:4200',trace:'retain-on-failure'}, projects:[{name:'desktop',use:{...devices['Desktop Chrome'],channel:'chrome'}},{name:'mobile',use:{...devices['iPhone 13'],defaultBrowserType:'chromium',channel:'chrome'}}], webServer:{command:'npm.cmd start',url:'http://localhost:4200',reuseExistingServer:true,timeout:60000}, reporter:'list' });

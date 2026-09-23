@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json", "version": 1, "newProjectRoot": "projects",
+  "projects": { "univen": { "projectType": "application", "root": "", "sourceRoot": "src", "architect": {
+    "build": { "builder": "@angular/build:application", "options": { "outputPath": "dist/univen", "browser": "src/main.ts", "index": "src/index.html", "tsConfig": "tsconfig.app.json", "assets": [{ "glob": "**/*", "input": "public" }], "styles": ["src/styles.css"] }, "configurations": { "production": { "outputHashing": "all", "budgets": [{ "type": "initial", "maximumWarning": "900kB", "maximumError": "1.5MB" }] }, "development": { "optimization": false, "sourceMap": true, "extractLicenses": false } }, "defaultConfiguration": "production" },
+    "serve": { "builder": "@angular/build:dev-server", "configurations": { "development": { "buildTarget": "univen:build:development" } }, "defaultConfiguration": "development" }
+  } } }, "cli": { "analytics": false }
+}
