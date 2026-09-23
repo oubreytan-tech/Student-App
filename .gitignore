@@ -4,5 +4,6 @@
 **/target/
 .tools/
 .data/
+.env
 *.log
 test-results/
