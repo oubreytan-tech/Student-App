@@ -4,6 +4,7 @@ export const services = [
  {title:'Registration Process Status',description:'View your academic registration record.',category:'Registration',icon:'circle-check',action:'proof'},
  {title:'Proof and Cost Breakdown',description:'Tuition fees, lab levies, and student council registration fees.',category:'Registration',icon:'credit-card',action:'statement'},
  {title:'Examination Results',description:'Semester module marks, grades, credits, and pass determinations.',category:'Academics',icon:'graduation-cap',action:'results'},
+ {title:'Exam Admission Slip (PDF)',description:'Official examination permit, timetable and admission slip.',category:'Academics',icon:'file-text',action:'examAdmission'},
  {title:'Academic Record & Transcript',description:'Historical transcript summary and degree credits.',category:'Academics',icon:'book-open',action:'results'},
  {title:'Assessment & Exam Admission Status',description:'Continuous assessment marks and exam admission.',category:'Academics',icon:'calendar',action:'results'},
  {title:'Academic Remarking / Appeal',description:'Submit an appeal or remark request for examination papers.',category:'Academics',icon:'message-square-warning',action:'call',ticketCategory:'Examination Results'},

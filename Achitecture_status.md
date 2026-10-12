@@ -1,6 +1,6 @@
 # Angular + Spring Boot Clone — Status Report
 
-> Generated: 2026-09-21
+
 
 ## Repository Layout
 
@@ -50,6 +50,7 @@ univen-anguler-app/
 | Proof of Registration dialog (PDF iframe) | ✅ |
 | Statement of Account dialog (3 tabs + PDF export) | ✅ |
 | Exam Results dialog (PDF export) | ✅ |
+| Exam Admission Slip dialog (PDF iframe & export) | ✅ |
 | Portal Records / Residence dialog | ✅ |
 | Digital Student Card dialog | ✅ |
 | Notification bell | ✅ |

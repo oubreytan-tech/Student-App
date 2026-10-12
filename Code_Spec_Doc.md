@@ -222,6 +222,8 @@ All application endpoints are under `/api`. Requests that need a body use JSON. 
 | GET | `/api/scrape/proof-status` | Check availability of proof of registration and return its stream URL. |
 | GET | `/api/scrape/proof-pdf` | Stream proof of registration inline, or download it when `?download=1` is supplied. |
 | GET | `/api/scrape/residence-proof-pdf` | Download residence proof for the current portal session. |
+| GET | `/api/scrape/exam-admission-status` | Check availability of the examination admission slip (permit) and return its stream URL. |
+| GET | `/api/scrape/exam-admission-pdf` | Stream or download official Examination Admission Slip PDF for the current portal session. |
 
 The backend rejects attempts to pass `unum` or `pin` to a read endpoint. Credentials are accepted only by the login endpoint.
 

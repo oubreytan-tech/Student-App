@@ -28,9 +28,14 @@ import type { YearSummary, DegreeSummary } from './app.component';
      <option [ngValue]="0">All years</option>
      @for(y of years; track y){<option [ngValue]="y">{{y}}</option>}
     </select>
-    <button type="button" class="secondary inline-flex items-center gap-1.5" (click)="exportPdf()">
-     <app-icon name="download" [size]="15"/> Download PDF
-    </button>
+    <div class="flex items-center gap-2">
+     <a href="/api/scrape/exam-admission-pdf?download=1" download class="secondary inline-flex items-center gap-1.5">
+      <app-icon name="file-text" [size]="15"/> Exam Admission Slip
+     </a>
+     <button type="button" class="secondary inline-flex items-center gap-1.5" (click)="exportPdf()">
+      <app-icon name="download" [size]="15"/> Download PDF
+     </button>
+    </div>
    </div>
 
    @if(!resultYear && degreeSummaries.length){
